@@ -1,0 +1,90 @@
+[
+    {
+        "id": 101,
+        "marca": "Fiat",
+        "modelo": "500",
+        "ano": "2010",
+        "created": "2019-10-08 23:14:00",
+        "modified": "2019-10-08 23:14:00"
+    },
+    {
+        "id": 102,
+        "marca": "Ford",
+        "modelo": "Focus",
+        "ano": "2018",
+        "created": "2019-10-08 23:14:30",
+        "modified": "2019-10-08 23:14:30"
+    },
+    {
+        "id": 103,
+        "marca": "Chevrolet",
+        "modelo": "Onix",
+        "ano": "2018",
+        "created": "2019-10-08 23:15:00",
+        "modified": "2019-10-08 23:15:00"
+    },
+    {
+        "id": 104,
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "ano": "2018",
+        "created": "2019-10-08 23:15:30",
+        "modified": "2019-10-08 23:15:30"
+    },
+    {
+        "id": 105,
+        "marca": "Cherry",
+        "modelo": "QQ",
+        "ano": "2017",
+        "created": "2019-10-08 23:56:48",
+        "modified": "2019-10-08 23:56:48"
+    },
+    {
+        "id": 106,
+        "marca": "Chevrolet",
+        "modelo": "Mustang",
+        "ano": "2019",
+        "created": "2019-10-08 23:57:28",
+        "modified": "2019-10-08 23:57:28"
+    },
+    {
+        "id": 107,
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "ano": "1997",
+        "created": "2019-10-08 23:59:34",
+        "modified": "2019-10-08 23:59:34"
+    },
+    {
+        "id": 108,
+        "marca": "Volkswagen",
+        "modelo": "Jetta",
+        "ano": "2019",
+        "created": "2019-10-09 01:42:13",
+        "modified": "2019-10-09 01:42:13"
+    },
+    {
+        "id": 109,
+        "marca": "Cherolet",
+        "modelo": "Classic",
+        "ano": "2010",
+        "created": "2019-10-09 01:45:48",
+        "modified": "2019-10-09 01:45:48"
+    },
+    {
+        "id": 110,
+        "marca": "Fiat",
+        "modelo": "Up",
+        "ano": "2018",
+        "created": "2019-10-09 01:47:16",
+        "modified": "2019-10-09 01:47:16"
+    },
+    {
+        "id": 1011,
+        "marca": "Toyota",
+        "modelo": "Etios",
+        "ano": "2019",
+        "created": "2019-10-09 02:14:36",
+        "modified": "2019-10-09 02:14:36"
+    }
+]
