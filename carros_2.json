@@ -1,90 +1,74 @@
 [
   {
-    "id": 101,
+    "id": 1,
     "marca": "Fiat",
     "modelo": "500",
-    "ano": "2010",
-    "created": "2019-10-08 23:14:00",
-    "modified": "2019-10-08 23:14:00"
+    "ano": "2010"
   },
   {
-    "id": 102,
+    "id": 2,
     "marca": "Ford",
     "modelo": "Focus",
-    "ano": "2018",
-    "created": "2019-10-08 23:14:30",
-    "modified": "2019-10-08 23:14:30"
+    "ano": "2018"
   },
   {
-    "id": 103,
+    "id": 3,
     "marca": "Chevrolet",
     "modelo": "Onix",
-    "ano": "2018",
-    "created": "2019-10-08 23:15:00",
-    "modified": "2019-10-08 23:15:00"
+    "ano": "2018"
   },
   {
-    "id": 104,
+    "id": 4,
     "marca": "Toyota",
     "modelo": "Corolla",
-    "ano": "2018",
-    "created": "2019-10-08 23:15:30",
-    "modified": "2019-10-08 23:15:30"
+    "ano": "2018"
   },
   {
-    "id": 105,
+    "id": 5,
     "marca": "Cherry",
     "modelo": "QQ",
-    "ano": "2017",
-    "created": "2019-10-08 23:56:48",
-    "modified": "2019-10-08 23:56:48"
+    "ano": "2017"
   },
   {
-    "id": 106,
+    "id": 6,
     "marca": "Chevrolet",
     "modelo": "Mustang",
-    "ano": "2019",
-    "created": "2019-10-08 23:57:28",
-    "modified": "2019-10-08 23:57:28"
+    "ano": "2019"
   },
   {
-    "id": 107,
+    "id": 7,
     "marca": "Fiat",
     "modelo": "Palio",
-    "ano": "1997",
-    "created": "2019-10-08 23:59:34",
-    "modified": "2019-10-08 23:59:34"
+    "ano": "1997"
   },
   {
-    "id": 108,
+    "id": 8,
     "marca": "Volkswagen",
     "modelo": "Jetta",
-    "ano": "2019",
-    "created": "2019-10-09 01:42:13",
-    "modified": "2019-10-09 01:42:13"
+    "ano": "2019"
   },
   {
-    "id": 109,
+    "id": 9,
     "marca": "Cherolet",
     "modelo": "Classic",
-    "ano": "2010",
-    "created": "2019-10-09 01:45:48",
-    "modified": "2019-10-09 01:45:48"
+    "ano": "2010"
   },
   {
-    "id": 110,
+    "id": 10,
     "marca": "Fiat",
     "modelo": "Up",
-    "ano": "2018",
-    "created": "2019-10-09 01:47:16",
-    "modified": "2019-10-09 01:47:16"
+    "ano": "2018"
   },
   {
-    "id": 1011,
+    "id": 11,
     "marca": "Toyota",
     "modelo": "Etios",
-    "ano": "2019",
-    "created": "2019-10-09 02:14:36",
-    "modified": "2019-10-09 02:14:36"
+    "ano": "2019"
+  },
+  {
+    "id": 12,
+    "marca": "Volkswagen",
+    "modelo": "New Beetle",
+    "ano": "2017"
   }
 ]
