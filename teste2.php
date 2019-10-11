@@ -7,9 +7,10 @@
   $json = file_get_contents('carros_2.json');
   $data = json_decode($json , true);
 
-  $procura = $_GET['idProcura'];
+  $q = $_GET['q'];
+  //$procura = $_GET['idProcura'];
   
-  $expression = "[? id == `$procura`]";
+  $expression = "[? id == `$q`]";
 
   $result = JmesPath\search($expression, $data);
 

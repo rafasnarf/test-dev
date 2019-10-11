@@ -39,6 +39,16 @@
         foreach($row as $campo => $valor){
           echo '<div>' . $campo . " " . $valor . '</div>';
         }
+        echo '<div id="alterar">
+                <form action="destino.php" method="PUT">
+                  <input type="submit" value="alterar">
+                </form>
+              </div>';
+        echo '<div id="excluir">
+                <form action="destino.php" method="DELETE">  
+                  <input type="submit" value="excluir"> 
+                </form>
+              </div>';
     }
   }
 
@@ -62,17 +72,18 @@
           foreach($row as $campo => $valor){
              echo '<div>' . $campo . " " . $valor . '</div>';
           }
-        }
-        echo '<div id="alterar">
-                <form action="destino.php" method="PUT">
+          echo '<div id="alterar">
+                <form action="destino.php" method="GET">
                   <input type="submit" value="alterar">
                 </form>
               </div>';
-        echo '<div id="excluir">
-                <form action="destino.php" method="DELETE">  
+          echo '<div id="excluir">
+                <form action="destino.php" method="GET">  
                   <input type="submit" value="excluir"> 
                 </form>
               </div>';
+        }
+        
     } 
   }
 ?>  

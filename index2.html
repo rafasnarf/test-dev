@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Projeto Carros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src=" js/vendor/modernizr-2.8.3.min.js"> </script>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <h1>Projeto Carros</h1>
+  <nav class="nav nav-pills flex-column flex-sm-row">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCadastro">
+      Cadastrar novo veículo
+    </button>
+    <div id="listar">
+      <form action='destino2.php' id="lista" method="GET">
+        <input type="button" class="btn btn-primary" id="btnListar" data-toggle="modal"
+          value="Listar veículos cadastrados" onclick="showLista()">
+      </form>
+    </div>
+    <form>
+      Pesquisa por ID
+      <input type="text" size="30" onkeyup="showResult(this.value)">
+      <div id="livesearch"></div>
+    </form>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastrar veículos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action='destino2.php' id="cad" method="POST">
+            <div id="cadastro">
+              Marca:
+              <select name='marca'>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Ford">Ford</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyunday">Hyunday</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Kia">Kia</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Renault">Renault</option>
+                <option value="BMW">BMW</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Audi">Audi</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Jeep">Jeep</option>
+              </select><br>
+              Modelo: <input type='text' name='modelo'><br>
+              Ano: <input type="number" name='ano' min="1980" max="2022" step="1" /><br>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id="showData"></div>
+
+  <script>
+    function showLista() {
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("showData").innerHTML = this.responseText;
+        }
+      }
+      xmlhttp.open("GET", "destino2.php?q=", true);
+      xmlhttp.send();
+    }
+
+    function showResult(str) {
+      if (str.length == 0) {
+        document.getElementById("showData").innerHTML = "";
+        document.getElementById("showData").style.border = "0px";
+        return;
+      }
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("showData").innerHTML = "";
+          document.getElementById("showData").innerHTML = this.responseText;
+        }
+      }
+      xmlhttp.open("GET", "destino2.php?idProcura=" + str, true);
+      xmlhttp.send();
+    }
+  </script>
+</body>
+
+</html>
